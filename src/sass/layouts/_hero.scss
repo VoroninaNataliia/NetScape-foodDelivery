@@ -88,6 +88,7 @@
     
     @include desktop {
         top: 26px;
+        right: 42px;
     }
 }
 
@@ -122,10 +123,16 @@
 
 .slider__arrow-back {
     left: -8px;
+    @include desktop {
+        left: -12px;
+    }
 }
 
 .slider__arrow-forward {
     right: -8px;
+    @include desktop {
+            right: -12px;
+        }
 }
 
 
