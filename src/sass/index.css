@@ -41,6 +41,42 @@ a,
   text-decoration: none;
 }
 
+
+.favorites__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorites__tittle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.favorites__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.favorites__img {
+  width: 280px;
+  height: 282px;
+}
+
+.favorites__list {
+  list-style-type: none;
+
 .section {
   padding-top: 60px;
 }
@@ -108,4 +144,5 @@ body {
 
 .hero__slider {
   display: none;
+
 }/*# sourceMappingURL=index.css.map */
