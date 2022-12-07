@@ -1,0 +1,74 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 30px;
+}
+
+.button--order-color {
+  background-color: var(--brand-color-additional);
+  border: none;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: var(--text-color-main);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color-main);
+  }
+}
+
+.button--order-light {
+  background-color: #ffffff;
+
+  border: 2px solid #7eb101;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: var(--text-color-main);
+
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color-additional);
+    border: 2px solid #bbf330;
+  }
+}
+
+.button--subscribe-color {
+  background-color: var(--brand-color-additional);
+  border: none;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: var(--text-color-main);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color-main);
+  }
+}
+
+.button--subscribe--light {
+  background-color: #ffffff;
+
+  border: 2px solid #7eb101;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: var(--text-color-main);
+
+  &:hover,
+  &:focus {
+    border-color: var(--button-color-main);
+  }
+}
