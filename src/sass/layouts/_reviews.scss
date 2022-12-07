@@ -1,3 +1,30 @@
 .review-container {
     padding-top: 60px;
+    &__text{
+        margin-bottom: 32px;
+    }
+}
+.review-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .review-item{
+        background-color: #fff;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-top-right-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        &__icon{
+            margin-bottom: 28px;
+        }
+        &__text{
+            padding-bottom: 40px;
+        }
+        .personal-data{
+            border-right: 1px solid #7EB101;;
+        }
+    }
+
 }
