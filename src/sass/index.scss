@@ -1,2 +1,18 @@
-@import './common';
-@import './example';
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './base/common';
+
+@import './components/button';
+@import './components/logo';
+@import './components/modal';
+@import './components/titles';
+
+@import './layouts/mobile-header';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/menu';
+@import './layouts/reviews';
+@import './layouts/subscribtion';
+@import './layouts/footer';
