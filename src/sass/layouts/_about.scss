@@ -1,15 +1,46 @@
+.offer-image{
+    position: relative;
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: block;
+    width: 256px;
+    height: 256px;
+}
+
+.title-offer-img{
+    position: absolute;
+    bottom: 41;
+    left: 30;
+}
 
 .title-offer{
     color: var(--text-color-main);
     font-size: 28px;
     font-weight: 700;
     line-height: 1.17;
+
+    margin-bottom: 28px;
+
+    @include tablet{
+        font-size: 42px;
+        font-weight: 700;
+
+        margin-bottom: 20px;
+    }
 }
 
 .text-offer{
     color:var(--text-color-main);
     font-size: 14px;
     line-height: 1.17;
+
+    margin-bottom: 28px;
+
+    @include tablet{
+        font-size: 16px;
+
+        margin-bottom: 40px;
+    }
 }
 
 .subtitle-offer{
@@ -19,17 +50,52 @@
     line-height: 1.17;
 }
 
+.subtitle-rocket::before{
+    content:"";
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-color: green;
+    border-radius: 50%;
+    padding: 11px;
+    margin-bottom: 8px;
+}
+
+.subtitle-touch::before{
+    content:"";
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-color: green;
+    border-radius: 50%;
+    padding: 11px;
+    margin-bottom: 8px; 
+}
+
 .subtext-offer{
     color:var(--text-color-main);
     font-size: 14;
     line-height: 1.17;
+
+    margin-bottom: 28px;
+}
+
+.button-offer{
+    display: inline-block;
+    padding: 10px 22px;
+    margin-right: 24px;
 }
 
 .link-offer{
-    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
     color:var(--text-color-main);
     font-size: 13.67px;
     line-height: 1.5;
+
+    @include desktop{
+        display: none;
+    }
 }
 
 
