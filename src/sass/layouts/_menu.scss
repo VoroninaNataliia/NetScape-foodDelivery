@@ -33,13 +33,27 @@
   }
 }
 
-.favorites__img {
-  width: 280px;
-  height: 282px;
+.favorites__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  @include tablet {
+    gap: 32px;
+  }
 }
 
 .favorites__item {
-  flex-basis: calc((100% - 2 * 20px) / 3);
+  flex-basis: calc((100% - 0 * 20px) / 1);
+
+  @include tablet {
+    flex-basis: calc((100% - 1 * 32px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 2 * 32px) / 3);
+  }
 }
 
 .favorites__item.hiden {
