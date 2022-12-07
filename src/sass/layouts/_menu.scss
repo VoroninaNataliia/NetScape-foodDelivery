@@ -38,8 +38,8 @@
   height: 282px;
 }
 
-.favorites__list {
-  list-style-type: none;
+.favorites__item {
+  flex-basis: calc((100% - 0 * 20px) / 1);
 }
 
 .favorites__item.hiden {
