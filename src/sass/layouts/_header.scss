@@ -1,0 +1,24 @@
+.header-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-section__box {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-section {
+  display: flex;
+}
+
+.header-section__box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.current-page {
+  font-weight: 500px;
+  text-decoration: underline;
+  color: var(--brand-color-additional);
+}
