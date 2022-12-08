@@ -35,17 +35,19 @@
 
 .favorites__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 
   @include tablet {
+    flex-direction: row;
     gap: 32px;
   }
 }
 
 .favorites__item {
-  flex-basis: calc((100% - 0 * 20px) / 1);
+  width: 100%;
 
   @include tablet {
     flex-basis: calc((100% - 1 * 32px) / 2);
@@ -66,14 +68,14 @@
 
 .favorites__link {
   display: block;
-  padding: 18px 18px;
-  border: 11px solid #ffe550;
+  padding: 29px 28px;
+  border: 14px solid var(--brand-color-main);
   border-radius: 50%;
 
   @include tablet {
-    padding: 24px 24px;
+    padding: 35px 34px;
   }
   @include desktop {
-    padding: 30px 30px;
+    padding: 41px 40px;
   }
 }
