@@ -4,35 +4,35 @@
   background-repeat: no-repeat;
 
   background-size: cover;
-  // background-image: url();
+  background-image: url(../../img/footer/fruitfooter-480-1@1x.jpg);
   @include retina {
-    // background-image: url();
+    background-image: url(../../img/footer/fruitfooter-480-2@2x.jpg);
   }
 
   @include mobile {
     max-width: 779px;
-    // background-image: url();
+    background-image: url(../../img/footer/fruitfooter-768-\1@1x.jpg);
 
     @include retina {
-      // background-image: url();
+      background-image: url(../../img/footer/fruitfooter-768-2@2x.jpg);
     }
   }
 
   @include tablet {
     max-width: 1299px;
-    // background-image: url();
+    background-image: url(../../img/footer/fruitfooter-768-1@1x.jpg);
 
     @include retina {
-      // background-image: url();
+      background-image: url(../../img/footer/fruitfooter-768-2@2x.jpg);
     }
   }
 
   @include desktop {
     max-width: 1280px;
-    // background-image: url();
+    background-image: url(../../img/footer/fruitfooter-1280-1@1x.jpg);
 
     @include retina {
-      // background-image: url();
+      background-image: url(../../img/footer/fruitfooter-1280-2@2x.jpg);
     }
   }
 
