@@ -1,0 +1,48 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-bth-close" data-modal-close>
+      <svg class="modal-close-svg" width="32" height="32">
+        <use class="modal-close-icon" href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal_text">Order Form</p>
+    <form class="modal-form">
+      <label class="modal-label">
+        <span class="modal-label_wrapper">Name</span>
+        <input
+          class="modal-input"
+          type="text"
+          name="name"
+          minlength="3"
+          maxlength="25"
+          required
+          placeholder="Your name"
+        />
+      </label>
+      <label class="modal-label"
+        ><span class="modal-label_wrapper">Phone number</span>
+        <input
+          class="modal-input"
+          type="tel"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          required
+          placeholder="+38(099)444 22 11"
+        />
+      </label>
+      <label class="modal-label"
+        ><span class="modal-label_wrapper">E-mail</span>
+        <input
+          class="modal-input"
+          type="email"
+          placeholder="example@gmail.com"
+          required
+        />
+      </label>
+      <div class="modal-bth-checkbox-box">
+        <button class="modal-bth-checkbox" type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
