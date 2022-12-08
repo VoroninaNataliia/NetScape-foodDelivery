@@ -10,24 +10,50 @@
         margin-bottom: 40px;
     }
     .subscribe-form{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 20px;
+        text-align: end;
         .subscribe-label{
             &__input{
-                width: 100%;
+            width: 100%;
             padding: 12px;
             border: 1px solid #FFE550;
             border-radius: 30px;
+            margin-bottom: 20px;
             }
         }
         .button--subscribe-color{
             &.subscribe-btn{
-                padding: 12px;
+                padding: 12px 22px;
                 border-radius: 30px;
-                max-width: 100px;
+                max-width: 103px;
             }
         }
     }
 }
+
+@include tablet {
+    .subscribe-container {
+            .subscribe-form {
+                text-align: start;
+                .subscribe-label {
+                    &__input {
+                        max-width: 394px;
+                        margin-right: 22px;
+                    }
+                }
+            }
+        }
+}
+ @include desktop {
+    .subscribe-container{
+        padding-bottom: 100px;
+        &__title{
+            font-size: 42px;
+            line-height: calc(50/42);
+        }
+    }
+    .subscribe-label {
+        &__input {
+            margin-right: 32px;
+        }
+    }      
+ }
