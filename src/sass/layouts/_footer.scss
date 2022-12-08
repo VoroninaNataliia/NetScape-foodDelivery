@@ -4,35 +4,35 @@
   background-repeat: no-repeat;
 
   background-size: cover;
-  background-image: url();
+  // background-image: url();
   @include retina {
-    background-image: url();
+    // background-image: url();
   }
 
   @include mobile {
     max-width: 779px;
-    background-image: url();
+    // background-image: url();
 
     @include retina {
-      background-image: url();
+      // background-image: url();
     }
   }
 
   @include tablet {
     max-width: 1299px;
-    background-image: url();
+    // background-image: url();
 
     @include retina {
-      background-image: url();
+      // background-image: url();
     }
   }
 
   @include desktop {
     max-width: 1280px;
-    background-image: url();
+    // background-image: url();
 
     @include retina {
-      background-image: url();
+      // background-image: url();
     }
   }
 
