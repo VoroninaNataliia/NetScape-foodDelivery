@@ -1,5 +1,10 @@
 .navigation-container {
-  margin-right: 30px;
+  display: none;
+
+  @include desktop {
+    display: flex;
+    margin-right: 30px;
+  }
 }
 
 .navigation__list {
