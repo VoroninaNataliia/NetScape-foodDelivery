@@ -1,0 +1,35 @@
+.header-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-section__box {
+  display: none;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-section {
+  display: flex;
+}
+
+.header-section__box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.current-page {
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--brand-color-additional);
+}
+
+.button--header {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    height: 32px;
+    padding: 6px 18px 6px 18px;
+  }
+}
