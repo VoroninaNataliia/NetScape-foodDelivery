@@ -33,3 +33,34 @@
     padding: 6px 18px 6px 18px;
   }
 }
+
+.menu-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+  border: none;
+
+  background-color: transparent;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-mobile__svg {
+  fill: #7eb101;
+  width: 28px;
+  height: 28px;
+}
+
+.mobile-container {
+  min-width: 130px;
+}
+
+.mobile-close {
+  width: 24px;
+  height: 24px;
+}
