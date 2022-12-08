@@ -1,133 +1,130 @@
-.container-offer{
-    background-color: #FFE550;
-    padding-bottom: 60px;
+.container-offer {
+  background-color: #ffe550;
+  padding-bottom: 60px;
 }
 // УБРАТЬ ПОТОМ
 
-.offer-image{
-    position: relative;
-    width: 256px;
-    height: 256px;
+.offer-image {
+  position: relative;
+  width: 256px;
+  height: 256px;
 
-    background-color: #fff;
-    border: 14px solid #ffe550;
-    border-radius: 50%;
-    outline: 5px solid rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+  border: 14px solid #ffe550;
+  border-radius: 50%;
+  outline: 5px solid rgba(255, 255, 255, 0.5);
 
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.offer-image-pic{
-    position: absolute;
-    top: -42px;
-    left:15px;
+.offer-image-pic {
+  position: absolute;
+  top: -42px;
+  left: 15px;
 }
 
-.apple-shadow{
-    width: 128px;
-    height: 44px;
-    position: absolute;
-    bottom:1;
-    left:50;
-    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-    filter: blur(6.61818px);
+.apple-shadow {
+  width: 128px;
+  height: 44px;
+  position: absolute;
+  bottom: 1;
+  left: 50;
+  background: radial-gradient(50% 50% at 50% 50%, #2f583f 0%, rgba(105, 105, 105, 0) 100%);
+  filter: blur(6.61818px);
 }
 
-.title-offer{
-    color: var(--text-color-main);
-    font-size: 28px;
+.title-offer {
+  color: var(--text-color-main);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  max-width: 526px;
+
+  margin-bottom: 28px;
+
+  @include tablet {
+    font-size: 42px;
     font-weight: 700;
-    line-height: 1.17;
-    max-width: 526px;
 
-    margin-bottom: 28px;
-
-    @include tablet{
-        font-size: 42px;
-        font-weight: 700;
-
-        margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
+  }
 }
 
-.text-offer{
-    color:var(--text-color-main);
-    font-size: 14px;
-    line-height: 1.17;
+.text-offer {
+  color: var(--text-color-main);
+  font-size: 14px;
+  line-height: 1.17;
 
-    width: 272px;
-    margin-bottom: 28px;
+  width: 272px;
+  margin-bottom: 28px;
 
-
-    @include tablet{
-        font-size: 16px;
-        width: 500px;
-        margin-bottom: 40px;
-    }
+  @include tablet {
+    font-size: 16px;
+    width: 500px;
+    margin-bottom: 40px;
+  }
 }
 
-.subtitle-offer{
-    color:var(--text-color-main);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
+.subtitle-offer {
+  color: var(--text-color-main);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
 }
 
-.subtitle-rocket::before{
-    content:"";
-    display: block;
-    width: 48px;
-    height: 48px;
-    background-image: url(/img/hero-food/rocket.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #ffffff;
-    border-radius: 50%;
-    padding: 11px;
-    margin-bottom: 8px;
+.subtitle-rocket::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url(../img/hero-food/rocket.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 11px;
+  margin-bottom: 8px;
 }
 
-.subtitle-touch::before{
-    content:"";
-    display: block;
-    width: 48px;
-    height: 48px;
-    background-image: url(/img/hero-food/touch.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #ffffff;
-    border-radius: 50%;
-    padding: 11px;
-    margin-bottom: 8px; 
+.subtitle-touch::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url(../img/hero-food/touch.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 11px;
+  margin-bottom: 8px;
 }
 
-.subtext-offer{
-    color:var(--text-color-main);
-    font-size: 14;
-    line-height: 1.17;
+.subtext-offer {
+  color: var(--text-color-main);
+  font-size: 14;
+  line-height: 1.17;
 
-    max-width: 253px;
-    margin-bottom: 28px;
+  max-width: 253px;
+  margin-bottom: 28px;
 }
 
-.button-offer{
-    display: inline-block;
-    padding: 10px 22px;
-    margin-right: 24px;
+.button-offer {
+  display: inline-block;
+  padding: 10px 22px;
+  margin-right: 24px;
 }
 
-.link-offer{
-    display: inline-flex;
-    align-items: center;
-    color:var(--text-color-main);
-    font-size: 13.67px;
-    line-height: 1.5;
+.link-offer {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-color-main);
+  font-size: 13.67px;
+  line-height: 1.5;
 
-    @include desktop{
-        display: none;
-    }
+  @include desktop {
+    display: none;
+  }
 }
-
-

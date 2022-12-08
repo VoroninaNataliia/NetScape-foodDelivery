@@ -1,126 +1,105 @@
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Delivery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./sass/index.scss" />
-  </head>
-  <body>
-    <section class="favorites container">
-      <div class="favorites__box">
-        <h2 class="favorites__tittle">Some of Our Favorites</h2>
-        <p class="favorites__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <ul class="favorites__list">
-          <li class="favorites__item">
-            <a class="favorites__link" href="#">
-              <img
-                class="favorites__img"
-                srcset="
-                  ./img/gamburger1280@1x.png 315w,
-                  ./img/gamburger1280@2x.png 630w
-                  ./img/gamburger768@1x.png 268w,
-                  ./img/gamburger768@2x.png 536w
-                  ./img/gamburger320@1x.png 224w,
-                  ./img/gamburger320@2x.png 448w 
+<section class="favorites container">
+  <div class="favorites__box">
+    <h2 class="favorites__tittle">Some of Our Favorites</h2>
+    <p class="favorites__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <ul class="favorites__list">
+      <li class="favorites__item">
+        <a class="favorites__link" href="#">
+          <img
+            class="favorites__img"
+            srcset="
+                  ./img/menu-favorites/gamburger1280@1x.png 315w,
+                  ./img/menu-favorites/gamburger1280@2x.png 630w
+                  ./img/menu-favorites/gamburger768@1x.png 268w,
+                  ./img/menu-favorites/gamburger768@2x.png 536w
+                  ./img/menu-favorites/gamburger320@1x.png 224w,
+                  ./img/menu-favorites/gamburger320@2x.png 448w 
                 "
-                sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (min-width: 480px) 224px, 100vw"
-                src="./img/gamburger320@1x.png"
-                alt="gamburger"
-            /></a>
-          </li>
-          <li class="favorites__item">
-            <a class="favorites__link" href="#"
-              ><img
-                class="favorites__img"
-                srcset="
-                  ./img/pasta1280@1x.png 315w,
-                  ./img/pasta1280@2x.png 630w
-                  ./img/pasta768@1x.png  268w,
-                  ./img/pasta768@2x.png  536w
-                  ./img/pasta320@1x.png  224w,
-                  ./img/pasta320@2x.png  448w
+            sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (min-width: 480px) 224px, 100vw"
+            src="./img/menu-favorites/gamburger320@1x.png"
+            alt="gamburger"
+        /></a>
+      </li>
+      <li class="favorites__item">
+        <a class="favorites__link" href="#"
+          ><img
+            class="favorites__img"
+            srcset="
+                  ./img/menu-favorites/pasta1280@1x.png 315w,
+                  ./img/menu-favorites/pasta1280@2x.png 630w
+                  ./img/menu-favorites/pasta768@1x.png  268w,
+                  ./img/menu-favorites/pasta768@2x.png  536w
+                  ./img/menu-favorites/pasta320@1x.png  224w,
+                  ./img/menu-favorites/pasta320@2x.png  448w,
+                  
                 "
-                sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (min-width: 480px) 224px, 100vw"
-                src="./img/pasta320@1x.png"
-                alt="pasta"
-            /></a>
-          </li>
-          <li class="favorites__item">
-            <a class="favorites__link" href="#"
-              ><img
-                class="favorites__img"
-                srcset="
-                  ./img/pizza1280@1x.png 315w,
-                  ./img/pizza1280@2x.png 630w
-                  ./img/pizza768@1x.png 268w,
-                  ./img/pizza768@2x.png 536w
-                  ./img/pizza320@1x.png 224w,
-                  ./img/pizza320@2x.png 448w
+            sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (min-width: 480px) 224px, 100vw"
+            src="./img/menu-favorites/pasta320@1x.png"
+            alt="pasta"
+        /></a>
+      </li>
+      <li class="favorites__item">
+        <a class="favorites__link" href="#"
+          ><img
+            class="favorites__img"
+            srcset="
+                  ./img/menu-favorites/pizza1280@1x.png 315w,
+                  ./img/menu-favorites/pizza1280@2x.png 630w
+                  ./img/menu-favorites/pizza768@1x.png 268w,
+                  ./img/menu-favorites/pizza768@2x.png 536w
+                  ./img/menu-favorites/pizza320@1x.png 224w,
+                  ./img/menu-favorites/pizza320@2x.png 448w
                 "
-                sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (min-width: 480px) 224px, 100vw"
-                src="./img/pizza320@1x.png"
-                alt="pizza"
-            /></a>
-          </li>
-          <li class="favorites__item hiden">
-            <a class="favorites__link" href="#"
-              ><img
-                class="favorites__img"
-                srcset="
-                  ./img/chicken1280@1x.png 315w,
-                  ./img/chicken1280@2x.png 630w
-                  ./img/chicken768@1x.png 268w,
-                  ./img/chicken768@2x.png 536w
+            sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (min-width: 480px) 224px, 100vw"
+            src="./img/menu-favorites/pizza320@1x.png"
+            alt="pizza"
+        /></a>
+      </li>
+      <li class="favorites__item hiden">
+        <a class="favorites__link" href="#"
+          ><img
+            class="favorites__img"
+            srcset="
+                  ./img/menu-favorites/chicken1280@1x.png 315w,
+                  ./img/menu-favorites/chicken1280@2x.png 630w
+                  ./img/menu-favorites/chicken768@1x.png 268w,
+                  ./img/menu-favorites/chicken768@2x.png 536w
                 "
-                sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, 100vw"
-                src="./img/chicken768@1x.png"
-                alt="chicken"
-            /></a>
-          </li>
-          <li class="favorites__item hiden">
-            <a class="favorites__link" href="#"
-              ><img
-                class="favorites__img"
-                srcset="
-                  ./img/salat1280@1x.png 315w,
-                  ./img/salat1280@2x.png 630w
-                  ./img/salat768@1x.png 268w,
-                  ./img/salat768@2x.png 536w
+            sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, 100vw"
+            src="./img/menu-favorites/chicken768@1x.png"
+            alt="chicken"
+        /></a>
+      </li>
+      <li class="favorites__item hiden">
+        <a class="favorites__link" href="#"
+          ><img
+            class="favorites__img"
+            srcset="
+                  ./img/menu-favorites/salat1280@1x.png 315w,
+                  ./img/menu-favorites/salat1280@2x.png 630w
+                  ./img/menu-favorites/salat768@1x.png 268w,
+                  ./img/menu-favorites/salat768@2x.png 536w
                 "
-                sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, 100vw"
-                src="./img/salat768@1x.png"
-                alt="salat"
-            /></a>
-          </li>
-          <li class="favorites__item hiden">
-            <a class="favorites__link" href="#"
-              ><img
-                class="favorites__img"
-                srcset="
-                  ./img/borshch1280@1x.png 315w,
-                  ./img/borshch1280@2x.png 630w
-                  ./img/borshch768@1x.png 268w,
-                  ./img/borshch768@2x.png 536w
+            sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, 100vw"
+            src="./img/menu-favorites/salat768@1x.png"
+            alt="salat"
+        /></a>
+      </li>
+      <li class="favorites__item hiden">
+        <a class="favorites__link" href="#"
+          ><img
+            class="favorites__img"
+            srcset="
+                  ./img/menu-favorites/borshch1280@1x.png 315w,
+                  ./img/menu-favorites/borshch1280@2x.png 630w
+                  ./img/menu-favorites/borshch768@1x.png 268w,
+                  ./img/menu-favorites/borshch768@2x.png 536w
                 "
-                sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, 100vw"
-                src="./img/borshch768@1x.png"
-                alt="borsh"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </body>
-</html>
+            sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, 100vw"
+            src="./img/menu-favorites/borshch768@1x.png"
+            alt="borsh"
+        /></a>
+      </li>
+    </ul>
+  </div>
+</section>

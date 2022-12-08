@@ -2,37 +2,28 @@
   padding-bottom: 60px;
   width: 100%;
   background-repeat: no-repeat;
+  max-width: 767px;
 
   background-size: cover;
-  // background-image: url();
+  background-image: url(../img/footer/fruitfooter-480-1@1x.png);
   @include retina {
-    // background-image: url();
-  }
-
-  @include mobile {
-    max-width: 779px;
-    // background-image: url();
-
-    @include retina {
-      // background-image: url();
-    }
+    background-image: url(../img/footer/fruitfooter-480-2@2x.png);
   }
 
   @include tablet {
-    max-width: 1299px;
-    // background-image: url();
+    max-width: 1279px;
+    background-image: url(../img/footer/fruitfooter-768-1@1x.png);
 
     @include retina {
-      // background-image: url();
+      background-image: url(../img/footer/fruitfooter-768-2@2x.png);
     }
   }
 
   @include desktop {
-    max-width: 1280px;
-    // background-image: url();
+    background-image: url(../img/footer/fruitfooter-1280-1@1x.png);
 
     @include retina {
-      // background-image: url();
+      background-image: url(../img/footer/fruitfooter-1280-2@2x.png);
     }
   }
 

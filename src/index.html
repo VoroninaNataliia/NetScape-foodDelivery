@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,12 +33,12 @@
   <body class="nomaker-ul">
     <include src="./partials/header.html"></include>
     <main>
-      <div>
+      <div class="global-hero">
         <include src="./partials/hero.html"></include>
         <include src="./partials/about.html"></include>
       </div>
       <include src="./partials/menu.html"></include>
-      <div clas="general-box">
+      <div clas="global-reviews">
         <include src="./partials/reviews.html"></include>
         <include src="./partials/subscribtion.html"></include>
       </div>
@@ -51,16 +51,16 @@
     <!-- mobile header -->
     <include src="./partials/mobile-header.html"></include>
 
-    <!-- JS -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <!-- js scripts -->
 
-    <script type="module" src="./index.js"></script>
+    <!-- <script src=“./modal.js”></script> -->
 
-    <script defer src="./js/menu-phone.js"></script>
+    <!-- <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/menu-phone.js"></script> -->
   </body>
 </html>

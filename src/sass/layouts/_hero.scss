@@ -1,144 +1,137 @@
 .section {
-    padding-top: 60px;
-    background-color: #fefefe;
-    
-        
-    @include desktop {
-        padding-top: 14px;
-        }
+  padding-top: 60px;
+  background-color: #fefefe;
+
+  @include desktop {
+    padding-top: 14px;
+  }
 }
 
 .hero-container {
-    display: flex;
-    padding-bottom: 50px;  
-    
+  display: flex;
+  padding-bottom: 50px;
 
-    @include tablet {        
-        padding-bottom: 73px;        
-    }
+  @include tablet {
+    padding-bottom: 73px;
+  }
 }
 
 .hero__main {
-    display: flex;
-    flex-direction: column;     
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__title {
+  @include tablet {
+    width: 537px;
+  }
 
-    @include tablet {
-        width: 537px;       
-    }
-
-    @include desktop {
-        margin-top: 145px;
-    }
+  @include desktop {
+    margin-top: 145px;
+  }
 }
 
 .hero__text {
-    width: 266px;
-    height: 105px;
-    margin-top: 20px;
-    margin-bottom: 20px;    
+  width: 266px;
+  height: 105px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-    @include tablet {
-        width: 336px;
-        height: 120px;        
-        margin-top: 44px;
-        margin-bottom: 40px;
-    }
+  @include tablet {
+    width: 336px;
+    height: 120px;
+    margin-top: 44px;
+    margin-bottom: 40px;
+  }
 
-    @include desktop {
-        width: 502px;
-        height: 69px;
-        margin-top: 28px;
-    }
+  @include desktop {
+    width: 502px;
+    height: 69px;
+    margin-top: 28px;
+  }
 }
 
 .hero__button {
-    width: 98px;
-    height: 32px;
-    border-radius: 30px;
-    border:transparent;
+  width: 98px;
+  height: 32px;
+  border-radius: 30px;
+  border: transparent;
 
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 150%;   
-        
-    color: var(--text-color-main);
-    background-color: var(--brand-color-additional);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
 
-        &:hover,
-        &:focus {
-            background-color: var(--button-color-main);
-        }
+  color: var(--text-color-main);
+  background-color: var(--brand-color-additional);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color-main);
+  }
 }
 
 .slider {
-    display: none;
-     @include tablet {
-        display: block;        
-     }
+  display: none;
+  @include tablet {
+    display: block;
+  }
 }
 
 .slider__img {
-    width: 292px;
-    background-color: #FFFFFF;
+  width: 292px;
+  background-color: #ffffff;
 
-    border: 14px solid #FFE550;
-    border-radius: 50%;
-    
-    @include desktop {
-        width: 528px;
-        border-width: 26px;
-    }
+  border: 14px solid #ffe550;
+  border-radius: 50%;
+
+  @include desktop {
+    width: 528px;
+    border-width: 26px;
+  }
 }
 
 .my-slick-prev {
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    border: transparent;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border: transparent;
 
-    @include desktop {
-        width: 48px;
-        height: 40px;
-        border-radius: 8px;        
-    }
+  @include desktop {
+    width: 48px;
+    height: 40px;
+    border-radius: 8px;
+  }
 }
 
 .my-slick-next {
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    border: transparent;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border: transparent;
 
-    @include desktop {
-        width: 48px;
-        height: 40px;
-        border-radius: 8px;        
-    }
+  @include desktop {
+    width: 48px;
+    height: 40px;
+    border-radius: 8px;
+  }
 }
 
-// .slider__arrow-icon {
-//     width: 12px;
-//     height: 20px;
+.slider__arrow-icon {
+  width: 12px;
+  height: 20px;
 
-//     fill:var(--text-color-main);
+  fill: var(--text-color-main);
 
-//     .slider__arrow:hover & {
-//         fill:#7EB101;
-//     }   
-    
-//     .slider__arrow:checked & {
-//         fill: var(--text-color-main);
-//     }
+  .slider__arrow:hover & {
+    fill: #7eb101;
+  }
 
-//     @include desktop {
-//         width: 17px;
-//         height: 29px;
-//     }
-// }
+  .slider__arrow:checked & {
+    fill: var(--text-color-main);
+  }
 
-
-
-
+  @include desktop {
+    width: 17px;
+    height: 29px;
+  }
+}
