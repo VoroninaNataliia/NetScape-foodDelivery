@@ -7,10 +7,12 @@
   padding-right: 20px;
 
   @include tablet {
+    width: 768;
     padding-left: 32px;
     padding-right: 32px;
   }
   @include desktop {
+    width: 1280;
     padding-left: 16px;
     padding-right: 16px;
   }

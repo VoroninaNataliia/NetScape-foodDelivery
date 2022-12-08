@@ -1,0 +1,33 @@
+.subscribe-container{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__text{
+        margin-bottom: 40px;
+    }
+    .subscribe-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 20px;
+        .subscribe-label{
+            &__input{
+                width: 100%;
+            padding: 12px;
+            border: 1px solid #FFE550;
+            border-radius: 30px;
+            }
+        }
+        .button--subscribe-color{
+            &.subscribe-btn{
+                padding: 12px;
+                border-radius: 30px;
+                max-width: 100px;
+            }
+        }
+    }
+}
