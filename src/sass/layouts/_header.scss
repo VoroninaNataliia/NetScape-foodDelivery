@@ -4,6 +4,7 @@
 }
 
 .header-section__box {
+  display: none;
   display: flex;
   align-items: center;
 }
@@ -21,4 +22,14 @@
   font-weight: 500;
   text-decoration: underline;
   color: var(--brand-color-additional);
+}
+
+.button--header {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    height: 32px;
+    padding: 6px 18px 6px 18px;
+  }
 }
