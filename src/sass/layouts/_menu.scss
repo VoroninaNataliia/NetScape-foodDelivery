@@ -65,6 +65,14 @@
 }
 
 .favorites__link {
+  display: block;
+  padding: 18px 18px;
+  border: 11px solid #ffe550;
   border-radius: 50%;
-  border: 14px solid var(--brand-color-main);
+
+   @include tablet {
+    padding: 24px 24px;
+  }
+  @include desktop {
+    padding: 30px 30px;
 }
