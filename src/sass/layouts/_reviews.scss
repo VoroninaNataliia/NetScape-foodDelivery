@@ -1,0 +1,102 @@
+.review-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../../img/reviewer/bcg_img-320-@1x.jpg);
+    @include retina {
+        background-image: url(../../img/reviewer/bcg_img-320-@2x.jpg);
+    }
+    background-position-y: 100%;
+    background-position-x: 50%;
+    background-size: cover;
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__text{
+        margin-bottom: 32px;
+    }
+}
+.review-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .review-item{
+        background-color: #fff;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-top-right-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        &__icon{
+            margin-bottom: 28px;
+        }
+        &__text{
+            padding-bottom: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: calc(21/18);
+        }
+        .personal-data{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            width: 160px;
+            border-right: 1px solid #7EB101;
+            &__info{
+                width: 100%;
+            }
+            &__title {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: calc(21/14);
+            }
+            
+        }
+    }
+}
+
+@include tablet {
+    .review-container {
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 120px;
+            &__title{
+                font-size: 42px;
+                line-height: calc(49/42);
+            }
+            &__text{
+                font-size: 16px;
+                line-height: calc(19/16)
+            }
+            background-image: url(../../img/reviewer/bcg_img-768-@1x.jpg);
+            @include retina {
+                background-image: url(../../img/reviewer/bcg_img-768-@2x.jpg);
+            }
+        }
+    
+        .review-list {
+            flex-direction: row;
+            gap: 32px;
+    
+        }
+}
+
+@include desktop {
+    .review-container {
+            padding-top: 100px;
+            padding-left: 16px;
+            padding-bottom: 200px;
+            background-image: url(../../img/reviewer/bcg_img-1280-@1x.jpg);
+            @include retina{
+                background-image: url(../../img/reviewer/bcg_img-1280-@2x.jpg);
+            }
+        }
+        .review-list {
+            flex-direction: row;
+            gap: 140px;
+            .review-item {
+                max-width: 500px;
+    
+            }
+        }
+}
