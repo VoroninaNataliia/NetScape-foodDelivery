@@ -1,0 +1,261 @@
+.footer {
+  padding-bottom: 60px;
+  width: 100%;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  // background-image: url();
+  @include retina {
+    // background-image: url();
+  }
+
+  @include mobile {
+    max-width: 779px;
+    // background-image: url();
+
+    @include retina {
+      // background-image: url();
+    }
+  }
+
+  @include tablet {
+    max-width: 1299px;
+    // background-image: url();
+
+    @include retina {
+      // background-image: url();
+    }
+  }
+
+  @include desktop {
+    max-width: 1280px;
+    // background-image: url();
+
+    @include retina {
+      // background-image: url();
+    }
+  }
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+.footer-container-wrap {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+
+  @include tablet {
+    align-items: center;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.footer-menu-items {
+  margin-left: 80px;
+
+  @include tablet {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-left: 114px;
+  }
+
+  @include desktop {
+    margin-left: 148px;
+  }
+}
+
+.footer-menu-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #000000;
+}
+
+.footer-menu-list:not(:last-child) {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.footer-subscribe {
+  margin-bottom: 60px;
+
+  @include tablet {
+    margin-bottom: 100px;
+  }
+
+  @include desktop {
+    margin-bottom: 80px;
+  }
+}
+
+.footer-subscribe-text {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+.footer-subscribe-label {
+  @include tablet {
+    width: 279px;
+  }
+}
+
+.footer-subscribe-form {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+  }
+}
+
+.footer-subscribe-label {
+  @include tablet {
+    width: 279px;
+  }
+}
+
+.footer-subscribe-input {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #505050;
+  padding: 13px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 0.854167px solid #ffe550;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+    margin-bottom: 12px;
+  }
+
+  &:focus,
+  &:hover {
+    border-color: #bbf330;
+  }
+}
+
+.footer-bth-box {
+  // display: flex;
+  text-align: right;
+}
+
+.footer-subscribe-bth {
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #2c2c2c;
+  background: #ffffff;
+  border: 0.854167px solid #7eb101;
+  border-radius: 30px;
+  width: 103px;
+  padding: 11px 22px;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+
+  &:focus,
+  &:hover {
+    border-color: #ffe450;
+  }
+}
+
+.footer-subscribe-terms {
+  // text-align: start;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #2c2c2c;
+
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+.footer-subscribe-terms_link {
+  color: #7eb101;
+  text-decoration-line: underline;
+}
+
+.footer-service {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.footer-service-list {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  display: flex;
+
+  @include tablet {
+    gap: 20px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+.footer-service-link {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  text-decoration-line: underline;
+  color: #7eb101;
+}
+
+.footer-service-copyright {
+  text-align: center;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #2c2c2c;
+
+  @include desktop {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
