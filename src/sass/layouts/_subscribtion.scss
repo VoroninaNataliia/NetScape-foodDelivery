@@ -10,11 +10,24 @@
         margin-bottom: 40px;
     }
     .subscribe-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 20px;
         .subscribe-label{
-            width: 100%;
-            height: 100%;
+            &__input{
+                width: 100%;
+            padding: 12px;
             border: 1px solid #FFE550;
             border-radius: 30px;
+            }
+        }
+        .button--subscribe-color{
+            &.subscribe-btn{
+                padding: 12px;
+                border-radius: 30px;
+                max-width: 100px;
+            }
         }
     }
 }
