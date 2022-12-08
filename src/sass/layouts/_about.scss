@@ -1,5 +1,6 @@
 .container-offer{
-    background-color: #FFE550;;
+    background-color: #FFE550;
+    padding-bottom: 60px;
 }
 // УБРАТЬ ПОТОМ
 
@@ -24,11 +25,22 @@
     left:15px;
 }
 
+.apple-shadow{
+    width: 128px;
+    height: 44px;
+    position: absolute;
+    bottom:1;
+    left:50;
+    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+    filter: blur(6.61818px);
+}
+
 .title-offer{
     color: var(--text-color-main);
     font-size: 28px;
     font-weight: 700;
     line-height: 1.17;
+    max-width: 526px;
 
     margin-bottom: 28px;
 
@@ -51,7 +63,7 @@
 
     @include tablet{
         font-size: 16px;
-
+        width: 500px;
         margin-bottom: 40px;
     }
 }
@@ -66,9 +78,12 @@
 .subtitle-rocket::before{
     content:"";
     display: block;
-    width: 27px;
-    height: 27px;
-    background-color: green;
+    width: 48px;
+    height: 48px;
+    background-image: url(/img/hero-food/rocket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
     border-radius: 50%;
     padding: 11px;
     margin-bottom: 8px;
@@ -77,9 +92,12 @@
 .subtitle-touch::before{
     content:"";
     display: block;
-    width: 27px;
-    height: 27px;
-    background-color: green;
+    width: 48px;
+    height: 48px;
+    background-image: url(/img/hero-food/touch.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
     border-radius: 50%;
     padding: 11px;
     margin-bottom: 8px; 
@@ -90,6 +108,7 @@
     font-size: 14;
     line-height: 1.17;
 
+    max-width: 253px;
     margin-bottom: 28px;
 }
 
