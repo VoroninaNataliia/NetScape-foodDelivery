@@ -1,12 +1,15 @@
-.logo-box {
+.logo--link {
+  display: flex;
+
+  padding: 10px 20px;
+}
+
+.logo__svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   width: 66px;
   height: 52px;
-}
-
-.logo {
-  display: flex;
 }
