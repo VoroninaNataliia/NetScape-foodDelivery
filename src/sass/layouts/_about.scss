@@ -1,16 +1,27 @@
+.container-offer{
+    background-color: #FFE550;;
+}
+// УБРАТЬ ПОТОМ
+
 .offer-image{
     position: relative;
-    background-color: greenyellow;
-    border-radius: 50%;
-    display: block;
     width: 256px;
     height: 256px;
+
+    background-color: #fff;
+    border: 14px solid #ffe550;
+    border-radius: 50%;
+    outline: 5px solid rgba(255, 255, 255, 0.5);
+
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.title-offer-img{
+.offer-image-pic{
     position: absolute;
-    bottom: 41;
-    left: 30;
+    top: -42px;
+    left:15px;
 }
 
 .title-offer{
