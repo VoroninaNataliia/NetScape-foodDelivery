@@ -1,0 +1,29 @@
+.navigation-container {
+  margin-right: 30px;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation-list__item {
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  margin-right: 28px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.navigation-list__link {
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  font-size: 14px;
+  line-height: 1.17;
+  color: #000000;
+  &:hover {
+    font-weight: 500px;
+    color: var(--brand-color-additional);
+  }
+}
