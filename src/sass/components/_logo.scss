@@ -1,9 +1,3 @@
-.logo--link {
-  display: flex;
-
-  padding: 10px 20px;
-}
-
 .logo__svg {
   display: flex;
   flex-direction: column;
@@ -12,4 +6,8 @@
 
   width: 66px;
   height: 52px;
+}
+
+.logo__link--header {
+  padding: 10px 20px;
 }
