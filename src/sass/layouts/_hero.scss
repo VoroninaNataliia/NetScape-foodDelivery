@@ -102,8 +102,7 @@
     @include desktop {
         width: 528px;
         border-width: 26px;
-    }
-    
+    }    
 }
 
 .slider__arrow {
@@ -112,9 +111,14 @@
     width: 34px;
     height: 28px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border-radius: 4px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border: transparent;
 
     @include desktop {
         width: 48px;
@@ -126,26 +130,40 @@
 }
 
 .slider__arrow-back {
-    left: -8px;
+    left: -10px;
     @include desktop {
-        left: -12px;
+        left: -13px;
     }
 }
 
 .slider__arrow-forward {
-    right: -8px;
+    right: -10px;
     @include desktop {
-            right: -12px;
+            right: -13px;
         }
 }
 
 
 .slider__arrow-icon {
-    width: 34px;
-    height: 28px;
+    width: 12px;
+    height: 20px;
+
+    fill:var(--text-color-main);
+
+    .slider__arrow:hover & {
+        fill:#7EB101;
+    }   
+    
+    .slider__arrow:checked & {
+        fill: var(--text-color-main);
+    }
 
     @include desktop {
-        width: 48px;
-        height: 40px;
+        width: 17px;
+        height: 29px;
     }
 }
+
+
+
+
