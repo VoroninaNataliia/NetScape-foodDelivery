@@ -10,13 +10,11 @@
 
 .hero-container {
     display: flex;
-    padding-bottom: 50px;
-    margin-bottom: 41px;
+    padding-bottom: 50px;  
     
 
     @include tablet {        
-        padding-bottom: 73px;
-        margin-bottom: 42px;
+        padding-bottom: 73px;        
     }
 }
 
@@ -75,46 +73,27 @@
         }
 }
 
-.hero__slider {
+.slider {
     display: none;
-
-    @include tablet {
-        display: flex;
-        align-items: center;
-        position: absolute;    
-        right: 32px;
-        top: 149px;
-    }
-    
-    @include desktop {
-        top: 26px;
-        right: 42px;
-    }
+     @include tablet {
+        display: block;        
+     }
 }
 
-.slider__img {        
-    width: 320px;
-    background-color: #FFFFFF;     
-    
+.slider__img {
+    width: 292px;
+    background-color: #FFFFFF;
+
     border: 14px solid #FFE550;
     border-radius: 50%;
-
+    
     @include desktop {
         width: 528px;
         border-width: 26px;
-    }    
+    }
 }
 
-.slider__arrow {
-    position: absolute;
-    top: 46%;
-    width: 34px;
-    height: 28px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.my-slick-prev {
     border-radius: 4px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
@@ -122,47 +101,43 @@
 
     @include desktop {
         width: 48px;
-        height: 40px;       
-        
-        border-radius: 8px;
-        background-color: #FFFFFF;
+        height: 40px;
+        border-radius: 8px;        
     }
 }
 
-.slider__arrow-back {
-    left: -10px;
+.my-slick-next {
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border: transparent;
+
     @include desktop {
-        left: -13px;
+        width: 48px;
+        height: 40px;
+        border-radius: 8px;        
     }
 }
 
-.slider__arrow-forward {
-    right: -10px;
-    @include desktop {
-            right: -13px;
-        }
-}
+// .slider__arrow-icon {
+//     width: 12px;
+//     height: 20px;
 
+//     fill:var(--text-color-main);
 
-.slider__arrow-icon {
-    width: 12px;
-    height: 20px;
-
-    fill:var(--text-color-main);
-
-    .slider__arrow:hover & {
-        fill:#7EB101;
-    }   
+//     .slider__arrow:hover & {
+//         fill:#7EB101;
+//     }   
     
-    .slider__arrow:checked & {
-        fill: var(--text-color-main);
-    }
+//     .slider__arrow:checked & {
+//         fill: var(--text-color-main);
+//     }
 
-    @include desktop {
-        width: 17px;
-        height: 29px;
-    }
-}
+//     @include desktop {
+//         width: 17px;
+//         height: 29px;
+//     }
+// }
 
 
 
