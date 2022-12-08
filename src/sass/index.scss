@@ -8,7 +8,7 @@
 @import './components/logo';
 @import './components/modal';
 @import './components/titles';
-@import './utils/backdrop';
+@import './components/navigation';
 
 @import './layouts/mobile-header';
 @import './layouts/header';
@@ -18,3 +18,5 @@
 @import './layouts/reviews';
 @import './layouts/subscribtion';
 @import './layouts/footer';
+
+@import './utils/backdrop';
