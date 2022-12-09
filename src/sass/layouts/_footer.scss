@@ -4,35 +4,24 @@
   background-repeat: no-repeat;
 
   background-size: cover;
-  background-image: url(../img/footer/fruitfooter-480-1@1x.jpg);
+  background-image: url(../img/footer/fruitfooter-480-1@1x.png);
   @include retina {
-    background-image: url(../img/footer/fruitfooter-480-2@2x.jpg);
-  }
-
-  @include mobile {
-    max-width: 800px;
-    background-image: url(../img/footer/fruitfooter-768-1@1x.jpg);
-
-    @include retina {
-      background-image: url(../img/footer/fruitfooter-768-2@2x.jpg);
-    }
+    background-image: url(../img/footer/fruitfooter-480-2@2x.png);
   }
 
   @include tablet {
-    max-width: 1199px;
-    background-image: url(../img/footer/fruitfooter-768-1@1x.jpg);
+    background-image: url(../img/footer/fruitfooter-768-1@1x.png);
 
     @include retina {
-      background-image: url(../img/footer/fruitfooter-768-2@2x.jpg);
+      background-image: url(../img/footer/fruitfooter-768-2@2x.png);
     }
   }
 
   @include desktop {
-    max-width: 1280px;
-    background-image: url(../img/footer/fruitfooter-1280-1@1x.jpg);
+    background-image: url(../img/footer/fruitfooter-1280-1@1x.png);
 
     @include retina {
-      background-image: url(../img/footer/fruitfooter-1280-2@2x.jpg);
+      background-image: url(../img/footer/fruitfooter-1280-2@2x.png);
     }
   }
 
@@ -159,6 +148,14 @@
   &:focus,
   &:hover {
     border-color: var(--button-color-additional);
+
+    &:valid:focus {
+      border-color: var(--button-color-additional);
+    }
+
+    &:invalid:required:focus {
+      border-color: #ff705d;
+    }
   }
 }
 
@@ -172,7 +169,7 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 150%;
-  color: var(--button-color-additional);
+  color: #2c2c2c;
   background: #ffffff;
   border: 0.854167px solid #7eb101;
   border-radius: 30px;
@@ -194,7 +191,6 @@
 }
 
 .footer-subscribe-terms {
-  // text-align: start;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;

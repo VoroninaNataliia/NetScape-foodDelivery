@@ -1,13 +1,16 @@
 .review-container {
+  background-color: #fff;
+    background-image: url(../img/reviewer/bcg_img-320-@1x.jpg);
+  
+    @include retina {
+      background-image: url(../img/reviewer/bcg_img-320-@2x.jpg);
+    }
+    background-position-y: 100%;
+    background-position-x: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url(../img/reviewer/bcg_img-320-@1x.jpg);
-  @include retina {
-    background-image: url(../img/reviewer/bcg_img-320-@2x.jpg);
-  }
-  background-position-y: 100%;
-  background-position-x: 50%;
-  background-size: cover;
   &__title {
     margin-bottom: 20px;
   }
@@ -54,12 +57,26 @@
   }
 }
 
+@include mobile-max {
+  .review-container{
+    padding-bottom: 90px;
+  background-image: url(../img/reviewer/bcg_img-480-@1x.png);
+  @include retina {
+    background-image: url(../img/reviewer/bcg_img-480-@2x.png);
+  }
+    }
+}
+
 @include tablet {
   .review-container {
     width: 100%;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 120px;
+    background-image: url(../img/reviewer/bcg_img-768-@1x.jpg);
+    @include retina{
+      background-image: url(../img/reviewer/bcg_img-768-@2x.jpg);
+    }
     &__title {
       font-size: 42px;
       line-height: calc(49 / 42);
@@ -67,10 +84,6 @@
     &__text {
       font-size: 16px;
       line-height: calc(19 / 16);
-    }
-    background-image: url(../img/reviewer/bcg_img-768-@1x.jpg);
-    @include retina {
-      background-image: url(../img/reviewer/bcg_img-768-@2x.jpg);
     }
   }
 
