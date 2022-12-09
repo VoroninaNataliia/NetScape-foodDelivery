@@ -1,19 +1,33 @@
 .subscribe-container{
+    position: relative;
     background-color: #fff;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 60px;
-    position: relative;
-    &__img{
-        position: absolute;
-        top: -10%;
-    }
     &__title{
         margin-bottom: 20px;
     }
     &__text{
         margin-bottom: 40px;
     }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 78px;
+            background-image: url(../img/subcription/banan-320-@1x.png);
+    
+            @include retina {
+                background-image: url(../img/subcription/banan-320-@2x.png);
+            }
+    
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 0;
+        }
     .subscribe-form{
         text-align: end;
         .subscribe-label{
@@ -38,28 +52,59 @@
 
 @include tablet {
     .subscribe-container {
-            .subscribe-form {
-                text-align: start;
-                .subscribe-label {
-                    &__input {
-                        max-width: 394px;
-                        margin-right: 22px;
-                    }
+        padding-top: 82px;
+        &::before {
+                content: "";
+                position: absolute;
+                width: 242px;
+                height: 136px;
+                left: 80%;
+                top: -3%;
+                background-image: url(../img/subcription/banan-768-@1x.png);
+                @include retina {
+                    background-image: url(../img/subcription/banan-768-@2x.png);
+                }
+        }
+        .subscribe-form {
+            text-align: start;
+            .subscribe-label{
+                &__input {
+                    max-width: 394px;
+                    margin-right: 22px;
                 }
             }
         }
+    }
 }
+
  @include desktop {
     .subscribe-container{
+        padding-top: 0;
         padding-bottom: 100px;
         &__title{
             font-size: 42px;
             line-height: calc(50/42);
         }
+        &__text{
+            max-width: 656px;
+        }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 680px;
+                    height: 260px;
+                    left: 80%;
+                    top: 25%;
+                    background-image: url(../img/subcription/banan-1280-@1x.png);
+        
+                    @include retina {
+                        background-image: url(../img/subcription/banan-1280-@2x.png);
+                    }
+                }
     }
     .subscribe-label {
         &__input {
             margin-right: 32px;
         }
     }      
- }
+}
