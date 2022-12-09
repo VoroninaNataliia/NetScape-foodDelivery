@@ -1,16 +1,59 @@
 <section>
     <div class="container container-offer">
-        <div class="offer-image">
-            <div class="apple-shadow"></div>
-            <img class="offer-image-pic" alt="green apple" src="/src/img/about/applemob.png">
+        <div class="offer-img">
+            <ul class="offer-img-list img">
+                <li class="img-apple img-appple-main">
+                    <div class="apple-main">
+                        <div class="apple-shadow"></div>
+                    <img class="apple-main-pic"
+                        srcset="
+                        ./img/about/applemob.png 280w,
+                        ./img/about/applemob@2x.png 560w,
+                        ./img/about/appletab.png 357w,
+                        ./img/about/appletab@2x.png 714w,
+                        ./img/about/appledesktop.png 550w,
+                        ./img/about/appledesktop@2x.png 1100w
+                        "
+                        sizes="(min-width: 1280px) 550px, (min-width: 768px) 357px, (min-width: 320px) 280px, 100vw"
+                        src="./img/about/appledesktop.png"
+                        alt="big green apple"/>
+                </div>
+                </li>
+                <div class="img-desktop">
+                <li class="img-apple img-apple-transparent">
+                    <img
+                    srcset="
+                    ./img/about/appletransparent.png 166w,
+                    ./img/about/appletransparent@2x.png 332w"
+                    sizes="166px"
+                    src="./img/about/appletransparent.png"
+                    alt="medium green apple"
+                    />
+                </li>
+                <li class="img-apple img-apple-transparent">
+                    <img
+                    srcset="
+                    ./img/about/applesmall.png 108w,
+                    ./img/about/applesmall@2x.png 216w"
+                    sizes="108px"
+                    src="./img/about/applesmall.png"
+                    alt="small green apple"/>
+                </li>
+                </div>
+
+            </ul>
         </div>
 
-        <h2 class="title-offer">What's Special About Our Offerings</h2>
-        <p class="text-offer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse 
-            varius enim in eros elementum tristique. Duis cursus, mi quis viverra 
-            ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-        </p>
-        <ul>
+            <div class="offer-text-wrap">
+            <div class="offer-main">
+                <h2 class="title-offer">What's Special About Our Offerings</h2>
+                <p class="text-offer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse 
+                                    varius enim in eros elementum tristique. Duis cursus, mi quis viverra 
+                                    ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                </p>
+            </div>
+
+        <ul class="offer-list">
             <li>
                 <h3 class="subtitle-offer subtitle-rocket">Fasest Delivery</h3>
                 <p class="subtext-offer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
@@ -20,7 +63,10 @@
                 <p class="subtext-offer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
             </li>
         </ul>
+        <div class="offer-button-link">
         <button class="button button--order-light button-offer" type="button">Order now</button>
-        <a class="link-offer" href="#">Read more<svg class="" width="14" height="14"><use href="/src/img/icons.svg##icon-cursor"></use></svg></a>
+        <a class="link-offer" href="#">Read more<svg class="" width="14" height="14"><use href="./img/icons.svg#icon-cursor"></use></svg></a>
+        </div>
+        </div>
     </div>
 </section>
