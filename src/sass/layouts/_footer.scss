@@ -148,6 +148,14 @@
   &:focus,
   &:hover {
     border-color: var(--button-color-additional);
+
+    &:valid:focus {
+      border-color: var(--button-color-additional);
+    }
+
+    &:invalid:required:focus {
+      border-color: #ff705d;
+    }
   }
 }
 
