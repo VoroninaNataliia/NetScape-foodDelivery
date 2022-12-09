@@ -38,14 +38,15 @@
               type="email"
               name="post"
               required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               placeholder="Enter your email"
             />
-            <span class="term-conditions">
+            <p class="term-conditions">
               <svg width="12" height="12">
                 <use href="#"></use>
               </svg>
               Not a valid email address (example@email.com)
-            </span>
+            </p>
           </label>
           <div class="footer-bth-box">
             <button class="footer-subscribe-bth" type="submit">

@@ -128,7 +128,6 @@
 }
 
 .footer-subscribe-input {
-  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -138,13 +137,9 @@
   background-color: #ffffff;
   border: 0.854167px solid #ffe550;
   border-radius: 30px;
-  margin-bottom: 20px;
   outline: none;
+  cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @include tablet {
-    margin-bottom: 12px;
-  }
 
   &:focus,
   &:hover {
@@ -161,24 +156,29 @@
 }
 
 .term-conditions {
-  position: absolute;
   display: flex;
   align-items: center;
+  transition-property: opasity;
+  opacity: 0;
   font-weight: 400;
   font-size: 10px;
   line-height: 150%;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  gap: 4px;
+  width: 232px;
+  margin-top: 4px;
+  transition: visibility overflow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  // width: 232px;
+  @include tablet {
+    margin-top: 1px;
+  }
+}
+
+.footer-subscribe-input:invalid:required:focus + .term-conditions {
+  opacity: 1;
   color: #ff705d;
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
 }
 
 .footer-bth-box {
-  // display: flex;
   text-align: right;
 }
 
@@ -193,13 +193,18 @@
   border-radius: 30px;
   width: 103px;
   padding: 11px 22px;
+  margin-top: 20px;
   margin-bottom: 20px;
   outline: none;
   cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @include tablet {
+    margin-top: 0;
     margin-bottom: 0;
+  }
+
+  @include desktop {
+    margin-top: 0px;
   }
 
   &:focus,
@@ -217,6 +222,7 @@
   @include tablet {
     font-size: 12px;
     line-height: 1.16;
+    margin-top: 12px;
   }
 }
 
