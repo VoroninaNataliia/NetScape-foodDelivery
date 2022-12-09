@@ -1,7 +1,7 @@
 .navigation-container {
   display: none;
 
-  @include desktop {
+  @include tablet {
     display: flex;
     margin-right: 30px;
   }
