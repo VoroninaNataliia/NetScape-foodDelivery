@@ -11,12 +11,7 @@
 .hero-container {
     position: relative;
     display: flex;
-    padding-bottom: 50px;  
-    
-
-    @include tablet {        
-        padding-bottom: 73px;        
-    }
+    padding-bottom: 50px;
 }
 
 .hero__main {
