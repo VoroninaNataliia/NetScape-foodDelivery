@@ -1,38 +1,167 @@
 .container-offer{
-    background-color: #FFE550;
     padding-bottom: 60px;
-}
-// УБРАТЬ ПОТОМ
+    padding-top: 73px;
 
-.offer-image{
+    @include desktop{
+        display: flex;
+        gap: 90px;
+    }
+}
+
+.section-offer{
+    max-width: 1600px;
+    background-color: #ffffff;
+    background-image: url(../img/about/offerbg-mob.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include retina{
+        background-image: url(../img/about/offerbg-mob@2x.jpg);
+    }
+
+    @include tablet{
+        background-image: url(../img/about/offerbg-tab.jpg);
+
+        @include retina{
+            background-image: url(../img/about/offerbg-tab@2x.jpg);
+        }
+    }
+
+    @include desktop{
+        background-image: url(../img/about/offerbg-desk.jpg);
+
+        @include retina{
+            background-image: url(../img/about/offerbg-desk@2x.jpg);
+        }
+    }
+}
+
+.offer-img{
+    display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  &-list{
+    display: flex;
+    align-items: center;
+    @include tablet {
+      gap: 29px;
+    }
+  }
+}
+
+.apple-main{
     position: relative;
-    width: 256px;
-    height: 256px;
 
-    background-color: #fff;
-    border: 14px solid #ffe550;
+    background-color: #ffffff;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    outline: 5px solid rgba(255, 255, 255, 0.5);
+    border: 14px solid #FFE550;
+    outline: 3px solid rgba(255, 255, 255, 0.5);
 
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
+
+    @include tablet{
+        width: 357px;
+        height: 357px;
+
+        margin-top: 75px;
+    }
+
+    @include desktop{
+        width: 550px;
+        height: 550px;
+
+        margin-top: 123px;
+    }
+
 }
 
-.offer-image-pic{
-    position: absolute;
-    top: -42px;
-    left:15px;
-}
 
 .apple-shadow{
     width: 128px;
     height: 44px;
     position: absolute;
-    bottom:1;
-    left:50;
+    transform: translate(45%,430%);
     background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
     filter: blur(6.61818px);
+
+    @include tablet{
+        width: 164px;
+        height: 57px;
+
+        transform: translate(50%,420%);
+    }
+
+    @include desktop{
+        width: 252px;
+        height: 87px;
+
+        transform: translate(50%,430%);
+    }
+}
+
+.apple-main-pic{
+    position: absolute;
+    transform: translate(13%,-16%);
+
+    @include tablet{
+        transform: translate(15%,-15%);
+    }
+
+    @include desktop{
+        transform: translate(17%,-15%);
+    }
+}
+
+.img-desktop{
+    display: flex;
+    align-items: baseline;
+    gap: 44px;
+}
+
+.img-apple-transparent{
+    display: none;
+
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+
+// ===============TEXT===================
+.offer-text-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+
+  
+    @include tablet {
+      gap: 40px;
+    }
+
+    @include desktop {
+      gap: 0;
+      justify-content: center;
+      
+      margin-top: 123px;
+
+    }
+  }
+
+
+.offer-main{
+    display: flex;
+    flex-direction: column;
+    
+    @include desktop {
+      margin-bottom: 40px;
+    }
 }
 
 .title-offer{
@@ -40,7 +169,7 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 1.17;
-    max-width: 526px;
+    max-width: 280px;
 
     margin-bottom: 28px;
 
@@ -49,15 +178,22 @@
         font-weight: 700;
 
         margin-bottom: 20px;
+
+        max-width: 526px;
+    }
+
+    @include desktop{
+        max-width: 527px;
     }
 }
+
 
 .text-offer{
     color:var(--text-color-main);
     font-size: 14px;
     line-height: 1.17;
 
-    width: 272px;
+    // max-width: 272px;
     margin-bottom: 28px;
 
 
@@ -65,6 +201,23 @@
         font-size: 16px;
         width: 500px;
         margin-bottom: 40px;
+    }
+}
+
+.offer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 28px;
+  
+    @include tablet {
+      flex-direction: row;
+      gap: 116px;
+      margin-bottom: 40px;
+    }
+    @include desktop {
+      gap: 67px;
+      margin-bottom: 32px;
     }
 }
 
@@ -109,13 +262,25 @@
     line-height: 1.17;
 
     max-width: 253px;
-    margin-bottom: 28px;
+}
+
+.offer-button-link{
+    display: flex;
 }
 
 .button-offer{
     display: inline-block;
-    padding: 10px 22px;
+    width: 98px;
+    height: 32px;
+
     margin-right: 24px;
+
+
+    &:hover,
+    &:focus{
+        background-color: var(--brand-color-additional);
+    }
+
 }
 
 .link-offer{
