@@ -10,13 +10,23 @@
 
 .section-offer{
     max-width: 1600px;
-    background-color: #ffffff;
+
+    background-color: #FEFEFE;
+
     background-image: url(../img/about/offerbg-mob.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
     @include retina{
         background-image: url(../img/about/offerbg-mob@2x.jpg);
+    }
+
+    @include mobile-max{
+        background-image: url(../img/about/offerbg-mob480.jpg);
+
+        @include retina{
+            background-image: url(../img/about/offerbg-mob480@2x.jpg);
+        }
     }
 
     @include tablet{
@@ -53,7 +63,7 @@
 .apple-main{
     position: relative;
 
-    background-color: #ffffff;
+    background-color: #FEFEFE;
     width: 280px;
     height: 280px;
     border-radius: 50%;
@@ -114,17 +124,11 @@
     }
 }
 
-.img-desktop{
-    display: flex;
-    align-items: baseline;
-    gap: 44px;
-}
-
 .img-apple-transparent{
     display: none;
 
   @include tablet {
-    display: flex;
+    display: block;
   }
 
   @include desktop {
@@ -132,8 +136,17 @@
   }
 }
 
+.medi-apple{
+    padding-top: 75px;
+}
+
+.small-apple{
+    padding-top: 140px;
+}
+
 
 // ===============TEXT===================
+
 .offer-text-wrap{
     display: flex;
     flex-direction: column;
