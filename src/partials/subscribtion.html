@@ -1,4 +1,4 @@
-<section class="review-subscribtion-box">
+<section class="subscribtion-section">
   <div class="container subscribe-container">
     <h2 class="subscribe-container__title title">
       Subscribe To Get Special Offers
@@ -14,8 +14,16 @@
           type="email"
           name="mail"
           id="mail"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           placeholder="Enter your email"
         />
+        <span class="error">
+          <svg width="12" height="12">
+            <use href="./img/icons.svg#icon-error"></use>
+          </svg>
+          Not a valid email address (example@email.com)
+        </span>
       </label>
       <button type="submit" class="button--subscribe-color subscribe-btn">
         Subscribe

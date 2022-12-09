@@ -1,16 +1,22 @@
-.review-container {
+.review-section{
   background-color: #fff;
-    background-image: url(../img/reviewer/bcg_img-320-@1x.jpg);
-  
-    @include retina {
-      background-image: url(../img/reviewer/bcg_img-320-@2x.jpg);
-    }
-    background-position-y: 100%;
-    background-position-x: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: auto;
+  background-image: url(../img/reviewer/bcg_img-320-@1x.jpg);
+
+  @include retina {
+    background-image: url(../img/reviewer/bcg_img-320-@2x.jpg);
+  }
+
+  background-position-y: 100%;
+  background-position-x: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+}
+.review-container {
+  max-width: 1280px;
   &__title {
     margin-bottom: 20px;
   }
@@ -58,25 +64,30 @@
 }
 
 @include mobile-max {
-  .review-container{
-    padding-bottom: 90px;
-  background-image: url(../img/reviewer/bcg_img-480-@1x.png);
-  @include retina {
-    background-image: url(../img/reviewer/bcg_img-480-@2x.png);
+  .review-section{
+    background-image: url(../img/reviewer/bcg_img-480-@1x.png);
+    
+      @include retina {
+        background-image: url(../img/reviewer/bcg_img-480-@2x.png);
+      }
+            padding-bottom: 90px;
   }
-    }
 }
 
 @include tablet {
+  .review-section{
+   padding-bottom: 120px;
+  background-image: url(../img/reviewer/bcg_img-768-@1x.jpg);
+
+  @include retina {
+    background-image: url(../img/reviewer/bcg_img-768-@2x.jpg);
+  }
+  }
   .review-container {
     width: 100%;
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 120px;
-    background-image: url(../img/reviewer/bcg_img-768-@1x.jpg);
-    @include retina{
-      background-image: url(../img/reviewer/bcg_img-768-@2x.jpg);
-    }
+    
     &__title {
       font-size: 42px;
       line-height: calc(49 / 42);
@@ -94,14 +105,18 @@
 }
 
 @include desktop {
-  .review-container {
-    padding-top: 100px;
-    padding-left: 16px;
+  .review-section {
     padding-bottom: 200px;
+    padding-top: 100px;
     background-image: url(../img/reviewer/bcg_img-1280-@1x.jpg);
-    @include retina {
-      background-image: url(../img/reviewer/bcg_img-1280-@2x.jpg);
-    }
+      @include retina {
+        background-image: url(../img/reviewer/bcg_img-1280-@2x.jpg);
+      }
+  }
+  .review-container {
+    padding-left: 16px;
+    
+    
   }
   .review-list {
     flex-direction: row;
