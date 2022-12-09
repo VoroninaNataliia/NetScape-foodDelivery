@@ -1,10 +1,38 @@
 .container-offer{
-    background-color: #FFE550;
     padding-bottom: 60px;
+    padding-top: 73px;
 
     @include desktop{
         display: flex;
         gap: 90px;
+    }
+}
+
+.section-offer{
+    max-width: 1600px;
+    background-color: #ffffff;
+    background-image: url(../img/about/offerbg-mob.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include retina{
+        background-image: url(../img/about/offerbg-mob@2x.jpg);
+    }
+
+    @include tablet{
+        background-image: url(../img/about/offerbg-tab.jpg);
+
+        @include retina{
+            background-image: url(../img/about/offerbg-tab@2x.jpg);
+        }
+    }
+
+    @include desktop{
+        background-image: url(../img/about/offerbg-desk.jpg);
+
+        @include retina{
+            background-image: url(../img/about/offerbg-desk@2x.jpg);
+        }
     }
 }
 
@@ -32,14 +60,19 @@
     border: 14px solid #FFE550;
     outline: 3px solid rgba(255, 255, 255, 0.5);
 
+
     @include tablet{
         width: 357px;
         height: 357px;
+
+        margin-top: 75px;
     }
 
     @include desktop{
         width: 550px;
         height: 550px;
+
+        margin-top: 123px;
     }
 
 }
@@ -105,6 +138,8 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
+
+
   
     @include tablet {
       gap: 40px;
@@ -113,6 +148,9 @@
     @include desktop {
       gap: 0;
       justify-content: center;
+      
+      margin-top: 123px;
+
     }
   }
 
@@ -231,9 +269,10 @@
 }
 
 .button-offer{
-
     display: inline-block;
-    padding: 10px 22px 10px 22px;
+    width: 98px;
+    height: 32px;
+
     margin-right: 24px;
 
 
