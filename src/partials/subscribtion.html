@@ -1,9 +1,11 @@
-<section class="review-subscribtion-box" id="service">
+<section class="subscribtion-section" id="service">
   <div class="container subscribe-container">
-    <h2 class="subscribe-container__title title">Subscribe To Get Special Offers</h2>
+    <h2 class="subscribe-container__title title">
+      Subscribe To Get Special Offers
+    </h2>
     <p class="subscribe-container__text text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-      elementum tristique.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique.
     </p>
     <form name="subscribe" class="subscribe-form">
       <label for="mail" class="subscribe-label">
@@ -12,10 +14,20 @@
           type="email"
           name="mail"
           id="mail"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           placeholder="Enter your email"
         />
+        <span class="error">
+          <svg width="12" height="12">
+            <use href="./img/icons.svg#icon-error"></use>
+          </svg>
+          Not a valid email address (example@email.com)
+        </span>
       </label>
-      <button type="submit" class="button--subscribe-color subscribe-btn">Subscribe</button>
+      <button type="submit" class="button--subscribe-color subscribe-btn">
+        Subscribe
+      </button>
     </form>
   </div>
 </section>

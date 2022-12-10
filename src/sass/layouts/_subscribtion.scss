@@ -1,9 +1,14 @@
+.subscribtion-section{
+    margin: auto;
+    background-color: #fff;
+
+}
+
 .subscribe-container{
     position: relative;
-    background-color: #fff;
-    width: 100%;
     padding-top: 50px;
     padding-bottom: 60px;
+    margin: auto;
     &__title{
         margin-bottom: 20px;
     }
@@ -31,24 +36,60 @@
     .subscribe-form{
         text-align: end;
         .subscribe-label{
+            position: relative;
             &__input{
             width: 100%;
             padding: 12px;
             border: 1px solid #FFE550;
             border-radius: 30px;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: #505050;;
+            outline: none;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:focus,
+            &:hover {
+                    border-color: var(--button-color-additional);
+            
+                    &:valid:focus {
+                        border-color: var(--button-color-additional);
+                    }
+            
+                    &:invalid:required:focus {
+                        border-color: #ff705d;
+                    }
             }
+        }
+        .error {
+            display: flex;
+            gap: 4px;
+            opacity: 0;
+            transition-property: opasity;
+            position: absolute;
+            width: 232px;
+            font-size: 10px;
+            line-height: calc(15/10);
+            margin-top: 4px;
+
+        }
+        .subscribe-label__input:invalid:required:focus + .error{
+            opacity: 1;
+            color: #ff705d;
+        }
+            
         }
         .button--subscribe-color{
             &.subscribe-btn{
                 padding: 12px 22px;
                 border-radius: 30px;
                 max-width: 103px;
+                margin-top: 20px;
             }
         }
     }
 }
-
 
 @include tablet {
     .subscribe-container {
@@ -75,6 +116,10 @@
             }
         }
     }
+        .subscribe-label__input:invalid:required:focus + .error {
+            opacity: 1;
+            color: #ff705d;
+        }
 }
 
  @include desktop {

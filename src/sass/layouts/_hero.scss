@@ -1,6 +1,12 @@
 .section {
     padding-top: 60px;
     background-color: #fefefe;
+
+    padding-bottom: 50px;
+
+    @include tablet {
+        padding-bottom: 0;
+    }
     
         
     @include desktop {
