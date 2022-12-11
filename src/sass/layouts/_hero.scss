@@ -1,174 +1,169 @@
-.section {
-    padding-top: 60px;
-    background-color: #fefefe;
+.hero {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 50px;
 
-    padding-bottom: 50px;
+  @include tablet {
+    padding-bottom: 0;
+  }
 
-    @include tablet {
-        padding-bottom: 0;
-    }
-    
-        
-    @include desktop {
-        padding-top: 14px;
-        }
+  @include desktop {
+    padding-top: 14px;
+  }
+}
+
+.bg-container {
+  max-width: 1280px;
 }
 
 .hero-container {
-    position: relative;
-    display: flex;    
+  position: relative;
+  display: flex;
 }
 
 .hero__main {
-    display: flex;
-    flex-direction: column;     
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__title {
+  @include tablet {
+    width: 537px;
+  }
 
-    @include tablet {
-        width: 537px;       
-    }
-
-    @include desktop {
-        margin-top: 145px;
-    }
+  @include desktop {
+    margin-top: 145px;
+  }
 }
 
 .hero__text {
-    width: 266px;
-    height: 105px;
-    margin-top: 20px;
-    margin-bottom: 20px;    
+  width: 266px;
+  height: 105px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-    @include tablet {
-        width: 336px;
-        height: 120px;        
-        margin-top: 44px;
-        margin-bottom: 40px;
-    }
+  @include tablet {
+    width: 336px;
+    height: 120px;
+    margin-top: 44px;
+    margin-bottom: 40px;
+  }
 
-    @include desktop {
-        width: 502px;
-        height: 69px;
-        margin-top: 28px;
-    }
+  @include desktop {
+    width: 502px;
+    height: 69px;
+    margin-top: 28px;
+  }
 }
 
 .hero__button {
-    width: 98px;
-    height: 32px;
-    border-radius: 30px;
-    border:transparent;
+  width: 98px;
+  height: 32px;
+  border-radius: 30px;
+  border: transparent;
 
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 150%;   
-        
-    color: var(--text-color-main);
-    background-color: var(--brand-color-additional);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
 
-        &:hover,
-        &:focus {
-            background-color: var(--button-color-main);
-        }
+  color: var(--text-color-main);
+  background-color: var(--brand-color-additional);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color-main);
+  }
 }
 
 .hero__slider {
-    display: none;
+  display: none;
 
-    @include tablet {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 89px;
-        right: 9px;
-        
-    }
+  @include tablet {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 89px;
+    right: 9px;
+  }
 
-    @include desktop {
-        top: 0px;
-        right: 14px;
-    }
+  @include desktop {
+    top: 0px;
+    right: 14px;
+  }
 }
 
 .slider__img {
-    width: 320px;
-    background-color: #FFFFFF;
+  width: 320px;
+  background-color: #ffffff;
 
-    border: 14px solid #FFE550;
-    border-radius: 50%;
+  border: 14px solid #ffe550;
+  border-radius: 50%;
 
-    @include desktop {
-        width: 580px;
-        border-width: 26px;
-    }
-
+  @include desktop {
+    width: 580px;
+    border-width: 26px;
+  }
 }
 
 .slider__arrow {
-    position: absolute;
-    top: 46%;
-    width: 34px;
-    height: 28px;
+  position: absolute;
+  top: 46%;
+  width: 34px;
+  height: 28px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    border-radius: 4px;
-    border:none;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
-    &:hover {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-    }
-    @include desktop {
-        width: 48px;
-        height: 40px;
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+  @include desktop {
+    width: 48px;
+    height: 40px;
 
-        border-radius: 8px;
-        background-color: #FFFFFF;
-    }
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
 }
 
 .slider__arrow-back {
-    left: -10px;
+  left: -10px;
 
-    @include desktop {
-        left: -13px;
-    }
+  @include desktop {
+    left: -13px;
+  }
 }
 
 .slider__arrow-forward {
-    right: -10px;
+  right: -10px;
 
-    @include desktop {
-        right: -13px;
-    }
+  @include desktop {
+    right: -13px;
+  }
 }
 
 .slider__arrow-icon {
-    width: 12px;
-    height: 20px;
+  width: 12px;
+  height: 20px;
 
-    fill:var(--text-color-main);
+  fill: var(--text-color-main);
 
-    .slider__arrow:hover & {
-        fill:#7EB101;
-    }   
-    
-    .slider__arrow:checked & {
-        fill: var(--text-color-main);
-    }
+  .slider__arrow:hover & {
+    fill: #7eb101;
+  }
 
-    @include desktop {
-        width: 17px;
-        height: 29px;
-    }
+  .slider__arrow:checked & {
+    fill: var(--text-color-main);
+  }
+
+  @include desktop {
+    width: 17px;
+    height: 29px;
+  }
 }
-
-
-
-
