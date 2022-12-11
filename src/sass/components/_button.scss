@@ -25,6 +25,10 @@
   }
 }
 
+.button--order-color:active .section-header {
+  opacity: 0;
+}
+
 .button--order-light {
   background-color: #ffffff;
 
