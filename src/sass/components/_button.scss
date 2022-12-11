@@ -25,7 +25,7 @@
   }
 }
 
-.button--order-color:active .section-header {
+.button--order-color:enabled ~ .section-header {
   opacity: 0;
 }
 
