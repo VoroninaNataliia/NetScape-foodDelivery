@@ -57,9 +57,11 @@
   gap: 55px;
   flex-direction: row;
   margin-bottom: 40px;
+  padding-top: 64px;
 
   @include tablet {
     align-items: center;
+    padding-top: 0;
   }
 
   @include desktop {
