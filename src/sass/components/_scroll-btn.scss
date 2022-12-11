@@ -4,6 +4,10 @@
   bottom: 5px;
   border-radius: 50%;
   border: none;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+
 
   @include tablet {
     right: 30px;
@@ -16,32 +20,25 @@
   }
 }
 
-.scroll-up__button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  padding: 0;
-  border-style: none;
-  cursor: pointer;
-}
-
 .scroll-up__svg {
-  fill: darkgray;
+  fill: #7EB101;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    fill: gray;
+    fill: var(--brand-color-additional);
+    cursor: pointer;
   }
 }
 
 .stt {
-  visibility: hidden;
+  // visibility: hidden;
   opacity: 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .stt__active {
-  visibility: visible;
+  // visibility: visible;
   opacity: 0.9;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
