@@ -15,15 +15,21 @@
   background-color: var(--background-color-usual);
 
   transform: translateY(300%);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @include tablet {
     display: none;
   }
 }
 
+.footer-subscribe-input:invalid:required:focus + .term-conditions {
+  opacity: 1;
+  color: #ff705d;
+}
+
 .mobile-container.is-open {
   transform: translateY(0);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-container__btn {
