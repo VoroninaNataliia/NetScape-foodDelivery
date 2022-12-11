@@ -1,0 +1,47 @@
+.scroll-up {
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: none;
+
+  @include tablet {
+    right: 30px;
+    bottom: 35px;
+  }
+
+  @include desktop {
+    right: 40px;
+    bottom: 40px;
+  }
+}
+
+.scroll-up__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  border-style: none;
+  cursor: pointer;
+}
+
+.scroll-up__svg {
+  fill: darkgray;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: gray;
+  }
+}
+
+.stt {
+  visibility: hidden;
+  opacity: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stt__active {
+  visibility: visible;
+  opacity: 0.9;
+}

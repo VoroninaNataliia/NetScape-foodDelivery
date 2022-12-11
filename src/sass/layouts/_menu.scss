@@ -1,9 +1,11 @@
 .favorites {
+  width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .favorites__box {
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   justify-content: center;

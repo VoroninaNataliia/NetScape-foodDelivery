@@ -1,15 +1,5 @@
-.container-offer {
-  padding-bottom: 60px;
-  padding-top: 73px;
-
-  @include desktop {
-    display: flex;
-    gap: 90px;
-  }
-}
-
 .section-offer {
-  max-width: 1280px;
+  width: 100%;
   @include autoMarginX;
   background-color: #fefefe;
 
@@ -43,6 +33,17 @@
     @include retina {
       background-image: url(../img/about/offerbg-desk@2x.jpg);
     }
+  }
+}
+
+.container-offer {
+  max-width: 1280px;
+  padding-bottom: 60px;
+  padding-top: 73px;
+
+  @include desktop {
+    display: flex;
+    gap: 90px;
   }
 }
 
