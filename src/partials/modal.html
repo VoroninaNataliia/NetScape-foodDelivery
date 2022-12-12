@@ -15,15 +15,15 @@
           name="name"
           required
           minlength="3"
-          maxlenght="25"
+          maxlength="25"
           placeholder="Your name"
         />
-        <p class="modal-term-conditions">
+        <span class="modal-term-conditions">
           <svg width="12" height="12">
             <use href="./img/icons.svg#icon-error"></use>
           </svg>
           The name must be between 3 and 25 characters
-        </p>
+        </span>
       </label>
       <label class="modal-label"
         ><span class="modal-label_wrapper">Phone number</span>
@@ -36,27 +36,22 @@
           required
           placeholder="+38(099)444 22 11"
         />
-        <p class="modal-term-conditions">
+        <span class="modal-term-conditions">
           <svg width="12" height="12">
             <use href="./img/icons.svg#icon-error"></use>
           </svg>
           This phone must be in the format 099 000 00 00
-        </p>
+        </span>
       </label>
       <label class="modal-label"
         ><span class="modal-label_wrapper">E-mail</span>
-        <input
-          class="modal-input"
-          type="email"
-          placeholder="example@gmail.com"
-          required
-        />
-        <p class="modal-term-conditions">
+        <input class="modal-input" type="email" placeholder="example@gmail.com" required />
+        <span class="modal-term-conditions">
           <svg width="12" height="12">
             <use href="./img/icons.svg#icon-error"></use>
           </svg>
           Please enter a valid email address
-        </p>
+        </span>
       </label>
       <div class="modal-bth-checkbox-box">
         <button class="modal-bth-checkbox" type="submit">Send</button>
